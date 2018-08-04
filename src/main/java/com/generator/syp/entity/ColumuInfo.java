@@ -8,47 +8,67 @@ package com.generator.syp.entity;
 * @date 2018年8月2日
  */
 public class ColumuInfo {
-    
-    private static final long serialVersionUID = 123124L;
+
+	private static final long serialVersionUID = 123124L;
 	/**
 	 * 列名
 	 */
-    private String columnName;
-    /**
-     * 数据类型
-     */
-    private String dataType;
+	private String columnName;
 	/**
-	 * 列描述 
+	 * 列类型
 	 */
-    private String Colcomment;
+	private String columnType;
 	/**
-	 * 类属性 
+	 * 列描述
 	 */
-    private String Objproperty;
+	private String colComment;
+	/**
+	 * 类属性
+	 */
+	private String objProperty;
+	/**
+	 * 类属性 类型
+	 */
+	private String javaType;
+
 	public String getColumnName() {
 		return columnName;
 	}
+
 	public void setColumnName(String columnName) {
 		this.columnName = columnName;
 	}
-	public String getDataType() {
-		return dataType;
+
+	public String getColumnType() {
+		return columnType;
 	}
-	public void setDataType(String dataType) {
-		this.dataType = dataType;
+
+	public void setColumnType(String columnType) {
+		this.columnType = columnType;
 	}
-	public String getColcomment() {
-		return Colcomment;
+
+	public String getColComment() {
+		return colComment;
 	}
-	public void setColcomment(String colcomment) {
-		Colcomment = colcomment;
+
+	public void setColComment(String colComment) {
+		this.colComment = colComment;
 	}
-	public String getObjproperty() {
-		return Objproperty;
+
+	public String getObjProperty() {
+		return objProperty;
 	}
-	public void setObjproperty(String objproperty) {
-		Objproperty = objproperty;
+
+	public void setObjProperty(String objProperty) {
+		this.objProperty = objProperty;
 	}
-    
+
+	public String getJavaType() {
+		return javaType;
+	}
+
+	public void setJavaType(String javaType) {
+		this.javaType = javaType;
+	}
+
 }
